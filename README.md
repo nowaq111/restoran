@@ -1,0 +1,58 @@
+# Nedelja 1 — AI Asistent za Restoran
+
+Napravi AI asistenta koji odgovara na pitanja o meniju restorana **Le Bernardin** (New York).
+
+## Struktura
+
+```
+main.py              <- Tvoj kod — zavrsi TODO zadatke
+data/
+  lounge-menu.md     <- Meni restorana (Markdown format)
+  lounge-menu.txt    <- Meni restorana (plain text format)
+requirements.txt
+```
+
+## Pokretanje
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+Za listu dostupnih modela:
+
+```bash
+python main.py --models
+```
+
+## Sta treba da uradis
+
+Otvori `main.py` i zavrsi **2 TODO zadatka**:
+
+1. **`LLM_MODEL`** — Izaberi AI model, npr:
+   - `"qwen3-80b"` — Qwen model
+   - `"deepseek-r1"` — DeepSeek model 
+   - `"nova-lite"` — Amazonov model
+   - `"gemma-3-4b"` — Google model 
+   - `"mistral-7b"` —  Mistral model 
+
+2. **`SYSTEM_PROMPT`** — Napisi prompt koji govori AI-u ko je i kako da odgovara.
+
+Pogledaj fajlove u `data/` folderu — to je meni koji AI dobija uz svako pitanje.
+
+## Testiranje
+
+### Lokalno testiranje
+
+Pre nego sto pushnes, pokreni testove lokalno da vidis koliko prolazis:
+
+```bash
+pytest tests.py -v
+```
+
+Videces rezultat za svaki test — `PASSED` ili `FAILED`. Cilj je da prodjes vise od pola (6/10).
+
+### Automatsko testiranje
+
+Kad pushujes kod na GitHub, automatski se pokrecu testovi.
+Prodji vise od pola testova da zavrsis domaci.
